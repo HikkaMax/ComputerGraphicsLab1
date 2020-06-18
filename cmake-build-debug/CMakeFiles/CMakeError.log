@@ -1,0 +1,162 @@
+Determining if the C compiler works failed with the following output:
+Change Dir: D:/Users/Максим/rt_sample_new_/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake /nologo cmTC_5d853\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_5d853.dir\build.make /nologo -L                  CMakeFiles\cmTC_5d853.dir\build
+Building C object CMakeFiles/cmTC_5d853.dir/testCCompiler.c.obj
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\cl.exe @C:\Users\2BA0~1\AppData\Local\Temp\nm4E39.tmp
+testCCompiler.c
+Linking C executable cmTC_5d853.exe
+	"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_5d853.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_5d853.dir\objects1.rsp @C:\Users\2BA0~1\AppData\Local\Temp\nm4EE6.tmp
+LINK Pass 1: command "C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_5d853.dir\objects1.rsp /out:cmTC_5d853.exe /implib:cmTC_5d853.lib /pdb:D:\Users\??????\rt_sample_new_\cmake-build-debug\CMakeFiles\CMakeTmp\cmTC_5d853.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\cmTC_5d853.dir/intermediate.manifest CMakeFiles\cmTC_5d853.dir/manifest.res" failed (exit code 1201) with the following output:
+LINK : fatal error LNK1201: ╬°шсър яЁш чряшёш т срчє фрээ√ї "D:\Users\??????\rt_sample_new_\cmake-build-debug\CMakeFiles\CMakeTmp\cmTC_5d853.pdb" яЁюуЁрьь√; тючьюцэю, эх їтрЄрхЄ ьхёЄр эр фшёъх, эхфюяєёЄшь√щ яєЄ№ шыш эхфюёЄрЄюўэю яЁрт
+NMAKE : fatal error U1077: "C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" : тючтЁр∙хээ√щ ъюф "0xffffffff"
+Stop.
+NMAKE : fatal error U1077: "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\bin\HostX86\x86\nmake.exe" : тючтЁр∙хээ√щ ъюф "0x2"
+Stop.
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: D:/Users/Максим/rt_sample_new_/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake /nologo cmTC_82cd6\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_82cd6.dir\build.make /nologo -L                  CMakeFiles\cmTC_82cd6.dir\build
+Building C object CMakeFiles/cmTC_82cd6.dir/testCCompiler.c.obj
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\cl.exe @C:\Users\2BA0~1\AppData\Local\Temp\nmBDCB.tmp
+testCCompiler.c
+Linking C executable cmTC_82cd6.exe
+	"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_82cd6.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_82cd6.dir\objects1.rsp @C:\Users\2BA0~1\AppData\Local\Temp\nmBF72.tmp
+LINK Pass 1: command "C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_82cd6.dir\objects1.rsp /out:cmTC_82cd6.exe /implib:cmTC_82cd6.lib /pdb:D:\Users\??????\rt_sample_new_\cmake-build-debug\CMakeFiles\CMakeTmp\cmTC_82cd6.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\cmTC_82cd6.dir/intermediate.manifest CMakeFiles\cmTC_82cd6.dir/manifest.res" failed (exit code 1201) with the following output:
+LINK : fatal error LNK1201: ╬°шсър яЁш чряшёш т срчє фрээ√ї "D:\Users\??????\rt_sample_new_\cmake-build-debug\CMakeFiles\CMakeTmp\cmTC_82cd6.pdb" яЁюуЁрьь√; тючьюцэю, эх їтрЄрхЄ ьхёЄр эр фшёъх, эхфюяєёЄшь√щ яєЄ№ шыш эхфюёЄрЄюўэю яЁрт
+NMAKE : fatal error U1077: "C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" : тючтЁр∙хээ√щ ъюф "0xffffffff"
+Stop.
+NMAKE : fatal error U1077: "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\bin\HostX86\x86\nmake.exe" : тючтЁр∙хээ√щ ъюф "0x2"
+Stop.
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: D:/Users/Максим/rt_sample_new_/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake /nologo cmTC_1c63a\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_1c63a.dir\build.make /nologo -L                  CMakeFiles\cmTC_1c63a.dir\build
+Building C object CMakeFiles/cmTC_1c63a.dir/testCCompiler.c.obj
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\cl.exe @C:\Users\2BA0~1\AppData\Local\Temp\nm10E4.tmp
+testCCompiler.c
+Linking C executable cmTC_1c63a.exe
+	"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_1c63a.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_1c63a.dir\objects1.rsp @C:\Users\2BA0~1\AppData\Local\Temp\nm1124.tmp
+LINK Pass 1: command "C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_1c63a.dir\objects1.rsp /out:cmTC_1c63a.exe /implib:cmTC_1c63a.lib /pdb:D:\Users\??????\rt_sample_new_\cmake-build-debug\CMakeFiles\CMakeTmp\cmTC_1c63a.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\cmTC_1c63a.dir/intermediate.manifest CMakeFiles\cmTC_1c63a.dir/manifest.res" failed (exit code 1201) with the following output:
+LINK : fatal error LNK1201: ╬°шсър яЁш чряшёш т срчє фрээ√ї "D:\Users\??????\rt_sample_new_\cmake-build-debug\CMakeFiles\CMakeTmp\cmTC_1c63a.pdb" яЁюуЁрьь√; тючьюцэю, эх їтрЄрхЄ ьхёЄр эр фшёъх, эхфюяєёЄшь√щ яєЄ№ шыш эхфюёЄрЄюўэю яЁрт
+NMAKE : fatal error U1077: "C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" : тючтЁр∙хээ√щ ъюф "0xffffffff"
+Stop.
+NMAKE : fatal error U1077: "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\bin\HostX86\x86\nmake.exe" : тючтЁр∙хээ√щ ъюф "0x2"
+Stop.
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: D:/Users/Максим/rt_sample_new_/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake /nologo cmTC_1f867\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_1f867.dir\build.make /nologo -L                  CMakeFiles\cmTC_1f867.dir\build
+Building C object CMakeFiles/cmTC_1f867.dir/testCCompiler.c.obj
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\cl.exe @C:\Users\2BA0~1\AppData\Local\Temp\nm2084.tmp
+testCCompiler.c
+Linking C executable cmTC_1f867.exe
+	"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_1f867.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_1f867.dir\objects1.rsp @C:\Users\2BA0~1\AppData\Local\Temp\nm20E3.tmp
+LINK Pass 1: command "C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_1f867.dir\objects1.rsp /out:cmTC_1f867.exe /implib:cmTC_1f867.lib /pdb:D:\Users\??????\rt_sample_new_\cmake-build-debug\CMakeFiles\CMakeTmp\cmTC_1f867.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\cmTC_1f867.dir/intermediate.manifest CMakeFiles\cmTC_1f867.dir/manifest.res" failed (exit code 1201) with the following output:
+LINK : fatal error LNK1201: ╬°шсър яЁш чряшёш т срчє фрээ√ї "D:\Users\??????\rt_sample_new_\cmake-build-debug\CMakeFiles\CMakeTmp\cmTC_1f867.pdb" яЁюуЁрьь√; тючьюцэю, эх їтрЄрхЄ ьхёЄр эр фшёъх, эхфюяєёЄшь√щ яєЄ№ шыш эхфюёЄрЄюўэю яЁрт
+NMAKE : fatal error U1077: "C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" : тючтЁр∙хээ√щ ъюф "0xffffffff"
+Stop.
+NMAKE : fatal error U1077: "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\bin\HostX86\x86\nmake.exe" : тючтЁр∙хээ√щ ъюф "0x2"
+Stop.
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: D:/Users/Максим/rt_sample_new_/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake /nologo cmTC_bf9b0\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_bf9b0.dir\build.make /nologo -L                  CMakeFiles\cmTC_bf9b0.dir\build
+Building C object CMakeFiles/cmTC_bf9b0.dir/testCCompiler.c.obj
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\cl.exe @C:\Users\2BA0~1\AppData\Local\Temp\nm80F4.tmp
+testCCompiler.c
+Linking C executable cmTC_bf9b0.exe
+	"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_bf9b0.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_bf9b0.dir\objects1.rsp @C:\Users\2BA0~1\AppData\Local\Temp\nm8143.tmp
+LINK Pass 1: command "C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_bf9b0.dir\objects1.rsp /out:cmTC_bf9b0.exe /implib:cmTC_bf9b0.lib /pdb:D:\Users\??????\rt_sample_new_\cmake-build-debug\CMakeFiles\CMakeTmp\cmTC_bf9b0.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\cmTC_bf9b0.dir/intermediate.manifest CMakeFiles\cmTC_bf9b0.dir/manifest.res" failed (exit code 1201) with the following output:
+LINK : fatal error LNK1201: ╬°шсър яЁш чряшёш т срчє фрээ√ї "D:\Users\??????\rt_sample_new_\cmake-build-debug\CMakeFiles\CMakeTmp\cmTC_bf9b0.pdb" яЁюуЁрьь√; тючьюцэю, эх їтрЄрхЄ ьхёЄр эр фшёъх, эхфюяєёЄшь√щ яєЄ№ шыш эхфюёЄрЄюўэю яЁрт
+NMAKE : fatal error U1077: "C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" : тючтЁр∙хээ√щ ъюф "0xffffffff"
+Stop.
+NMAKE : fatal error U1077: "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\bin\HostX86\x86\nmake.exe" : тючтЁр∙хээ√щ ъюф "0x2"
+Stop.
+
+
+
+Detecting C OpenMP failed with the following output:
+Change Dir: D:/Users/Максим/rt_sample_new_/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake /nologo cmTC_7b817\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_7b817.dir\build.make /nologo -L                  CMakeFiles\cmTC_7b817.dir\build
+Building C object CMakeFiles/cmTC_7b817.dir/OpenMPTryFlag.c.obj
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\cl.exe @C:\Users\2BA0~1\AppData\Local\Temp\nm8CFB.tmp
+OpenMPTryFlag.c
+Linking C executable cmTC_7b817.exe
+	"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_7b817.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_7b817.dir\objects1.rsp @C:\Users\2BA0~1\AppData\Local\Temp\nm8E64.tmp
+LINK Pass 1: command "C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_7b817.dir\objects1.rsp /out:cmTC_7b817.exe /implib:cmTC_7b817.lib /pdb:D:\Users\??????\rt_sample_new_\cmake-build-debug\CMakeFiles\CMakeTmp\cmTC_7b817.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\cmTC_7b817.dir/intermediate.manifest CMakeFiles\cmTC_7b817.dir/manifest.res" failed (exit code 1201) with the following output:
+LINK : fatal error LNK1201: ╬°шсър яЁш чряшёш т срчє фрээ√ї "D:\Users\??????\rt_sample_new_\cmake-build-debug\CMakeFiles\CMakeTmp\cmTC_7b817.pdb" яЁюуЁрьь√; тючьюцэю, эх їтрЄрхЄ ьхёЄр эр фшёъх, эхфюяєёЄшь√щ яєЄ№ шыш эхфюёЄрЄюўэю яЁрт
+NMAKE : fatal error U1077: "C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" : тючтЁр∙хээ√щ ъюф "0xffffffff"
+Stop.
+NMAKE : fatal error U1077: "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\bin\HostX86\x86\nmake.exe" : тючтЁр∙хээ√щ ъюф "0x2"
+Stop.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: D:/Users/Максим/rt_sample_new_/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake /nologo cmTC_cb894\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_cb894.dir\build.make /nologo -L                  CMakeFiles\cmTC_cb894.dir\build
+Building CXX object CMakeFiles/cmTC_cb894.dir/OpenMPTryFlag.cpp.obj
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\cl.exe @C:\Users\2BA0~1\AppData\Local\Temp\nm9085.tmp
+OpenMPTryFlag.cpp
+Linking CXX executable cmTC_cb894.exe
+	"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_cb894.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_cb894.dir\objects1.rsp @C:\Users\2BA0~1\AppData\Local\Temp\nm90F4.tmp
+LINK Pass 1: command "C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_cb894.dir\objects1.rsp /out:cmTC_cb894.exe /implib:cmTC_cb894.lib /pdb:D:\Users\??????\rt_sample_new_\cmake-build-debug\CMakeFiles\CMakeTmp\cmTC_cb894.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\cmTC_cb894.dir/intermediate.manifest CMakeFiles\cmTC_cb894.dir/manifest.res" failed (exit code 1201) with the following output:
+LINK : fatal error LNK1201: ╬°шсър яЁш чряшёш т срчє фрээ√ї "D:\Users\??????\rt_sample_new_\cmake-build-debug\CMakeFiles\CMakeTmp\cmTC_cb894.pdb" яЁюуЁрьь√; тючьюцэю, эх їтрЄрхЄ ьхёЄр эр фшёъх, эхфюяєёЄшь√щ яєЄ№ шыш эхфюёЄрЄюўэю яЁрт
+NMAKE : fatal error U1077: "C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" : тючтЁр∙хээ√щ ъюф "0xffffffff"
+Stop.
+NMAKE : fatal error U1077: "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\bin\HostX86\x86\nmake.exe" : тючтЁр∙хээ√щ ъюф "0x2"
+Stop.
+
+
+
+Detecting C OpenMP failed with the following output:
+Change Dir: D:/Users/Максим/rt_sample_new_/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake /nologo cmTC_fc92d\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_fc92d.dir\build.make /nologo -L                  CMakeFiles\cmTC_fc92d.dir\build
+Building C object CMakeFiles/cmTC_fc92d.dir/OpenMPTryFlag.c.obj
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\cl.exe @C:\Users\2BA0~1\AppData\Local\Temp\nm535B.tmp
+OpenMPTryFlag.c
+Linking C executable cmTC_fc92d.exe
+	"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_fc92d.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_fc92d.dir\objects1.rsp @C:\Users\2BA0~1\AppData\Local\Temp\nm54A4.tmp
+LINK Pass 1: command "C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_fc92d.dir\objects1.rsp /out:cmTC_fc92d.exe /implib:cmTC_fc92d.lib /pdb:D:\Users\??????\rt_sample_new_\cmake-build-debug\CMakeFiles\CMakeTmp\cmTC_fc92d.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\cmTC_fc92d.dir/intermediate.manifest CMakeFiles\cmTC_fc92d.dir/manifest.res" failed (exit code 1201) with the following output:
+LINK : fatal error LNK1201: ╬°шсър яЁш чряшёш т срчє фрээ√ї "D:\Users\??????\rt_sample_new_\cmake-build-debug\CMakeFiles\CMakeTmp\cmTC_fc92d.pdb" яЁюуЁрьь√; тючьюцэю, эх їтрЄрхЄ ьхёЄр эр фшёъх, эхфюяєёЄшь√щ яєЄ№ шыш эхфюёЄрЄюўэю яЁрт
+NMAKE : fatal error U1077: "C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" : тючтЁр∙хээ√щ ъюф "0xffffffff"
+Stop.
+NMAKE : fatal error U1077: "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\bin\HostX86\x86\nmake.exe" : тючтЁр∙хээ√щ ъюф "0x2"
+Stop.
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: D:/Users/Максим/rt_sample_new_/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake /nologo cmTC_6c90c\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_6c90c.dir\build.make /nologo -L                  CMakeFiles\cmTC_6c90c.dir\build
+Building CXX object CMakeFiles/cmTC_6c90c.dir/OpenMPTryFlag.cpp.obj
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\cl.exe @C:\Users\2BA0~1\AppData\Local\Temp\nm5705.tmp
+OpenMPTryFlag.cpp
+Linking CXX executable cmTC_6c90c.exe
+	"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_6c90c.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_6c90c.dir\objects1.rsp @C:\Users\2BA0~1\AppData\Local\Temp\nm5773.tmp
+LINK Pass 1: command "C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_6c90c.dir\objects1.rsp /out:cmTC_6c90c.exe /implib:cmTC_6c90c.lib /pdb:D:\Users\??????\rt_sample_new_\cmake-build-debug\CMakeFiles\CMakeTmp\cmTC_6c90c.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\cmTC_6c90c.dir/intermediate.manifest CMakeFiles\cmTC_6c90c.dir/manifest.res" failed (exit code 1201) with the following output:
+LINK : fatal error LNK1201: ╬°шсър яЁш чряшёш т срчє фрээ√ї "D:\Users\??????\rt_sample_new_\cmake-build-debug\CMakeFiles\CMakeTmp\cmTC_6c90c.pdb" яЁюуЁрьь√; тючьюцэю, эх їтрЄрхЄ ьхёЄр эр фшёъх, эхфюяєёЄшь√щ яєЄ№ шыш эхфюёЄрЄюўэю яЁрт
+NMAKE : fatal error U1077: "C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" : тючтЁр∙хээ√щ ъюф "0xffffffff"
+Stop.
+NMAKE : fatal error U1077: "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\bin\HostX86\x86\nmake.exe" : тючтЁр∙хээ√щ ъюф "0x2"
+Stop.
+
+
+
