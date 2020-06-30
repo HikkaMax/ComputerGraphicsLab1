@@ -46,7 +46,7 @@ float3 SimpleRT::TraceRay(Ray &ray, const std::vector <std::shared_ptr<GeoObject
 
 		if (shadowGeoIndex == -1) {
 			Ray ray_out;
-			if (surf.m_ptr->Scatter(ray, surf, surfColor, ray_out)) {
+			if (surf.m_ptr->Scatter(ray, surf, surfColor, ray_out, shadow_ray)) {
 				ray = ray_out;
 			}
 			pixel_color += surfColor;

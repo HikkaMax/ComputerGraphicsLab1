@@ -31,14 +31,14 @@ public:
 
     ~Material() {};
 
-    virtual bool Scatter(const Ray &ray_in, const SurfHit &surf, float3 &attenuation, Ray &ray_out) = 0;
+    virtual bool Scatter(const Ray &ray_in, const SurfHit &surf, float3 &attenuation, Ray &ray_out, Ray shadow_ray) = 0;
 };
 
 class IdealMirror : public Material {
 public:
     IdealMirror(const float3 &a_color) : Material(), color(a_color) {};
 
-    bool Scatter(const Ray &ray_in, const SurfHit &surf, float3 &attenuation, Ray &ray_out) override;
+    bool Scatter(const Ray &ray_in, const SurfHit &surf, float3 &attenuation, Ray &ray_out, Ray shadow_ray) override;
 
     float3 color;
 };
@@ -47,7 +47,7 @@ class DiffusalMaterial : public Material {
 public:
 	DiffusalMaterial(const float3& a_color) : Material(), color(a_color) {};
 
-	bool Scatter(const Ray& ray_in, const SurfHit& surf, float3& attenuation, Ray& ray_out) override;
+	bool Scatter(const Ray& ray_in, const SurfHit& surf, float3& attenuation, Ray& ray_out, Ray shadow_ray) override;
 
 	float3 color;
 };
