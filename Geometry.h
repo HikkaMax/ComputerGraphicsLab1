@@ -83,5 +83,24 @@ private:
     float3 z;
 };
 
+class Cylinder : public GeoObject {
+public:
+	Cylinder(const float3& center, const float& radius, const float& height, Material* a_m) : GeoObject(a_m), center(center), radius(radius), height(height) {}
+	
+	~Cylinder() = default;
+
+	bool Intersect(const Ray& ray, float t_min, float t_max, SurfHit &surf) const override;
+
+	bool intersect_base(const Ray& ray, const float3& p, float& t, float3 &normal) const;
+
+	float3 normal_in(const float3& p) const;
+
+private:
+	float3 center;
+	float3 center2;
+	float radius;
+	float height;
+};
+
 
 #endif //RT_SAMPLE_NEW_GEOMETRY_H

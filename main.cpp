@@ -51,7 +51,8 @@ void test_scene1()
  auto plane1 = std::make_shared<Plane>(float3(+0.0f, -1.0f, +0.0f), float3(0.0f, 1.0f, 0.0f), new IdealMirror(float3(0.3f, 0.3f, 0.3f)));
   auto triangle = std::make_shared<Triangle>(float3(+0.0f, +0.0f, +0.0f), float3(+6.0f, +12.0f, +0.0f), float3(+12.0f, +0.0f, +0.0f), new IdealMirror(float3(1.0f, 0.0f, 0.0f)));
   auto sph  = std::make_shared<Sphere> (float3(5.0f, +5.0f, +2.0f), 2,   new DiffusalMaterial(float3(0.0f, 1.0f, 0.0f)));
- auto box  = std::make_shared<Box> (float3(-5.0f, +3.0f, +0.0f),float3(+5.0f, +6.0f, +10.0f), float3(+0.0f, +0.0f, +2.0f), float3(+0.0f, -1.0f, +0.0f),  new IdealMirror(float3(0.0f, 1.0f, 0.0f)));
+ //auto box  = std::make_shared<Box> (float3(-5.0f, +3.0f, +0.0f),float3(+5.0f, +6.0f, +10.0f), float3(+0.0f, +0.0f, +2.0f), float3(+0.0f, -1.0f, +0.0f),  new IdealMirror(float3(0.0f, 1.0f, 0.0f)));
+ auto box  = std::make_shared<Cylinder> (float3(-3.0f, +1.0f, +12.0f), 1.0f, 2.0f,  new IdealMirror(float3(0.0f, 1.0f, 0.0f)));
 //  auto sph2 = std::make_shared<Sphere> (float3(+5.0f, +1.0f, +0.0f), 1,   new IdealMirror(float3(0.90f, 0.76f, 0.46f)));
 //  auto sph3 = std::make_shared<Sphere> (float3(+5.0f, +3.0f, -5.0f), 1.5, new IdealMirror(float3(0.65f, 0.77f, 0.97f)));
 //  auto sph4 = std::make_shared<Sphere> (float3(-3.0f, +1.5f, +5.0f), 1.5, new IdealMirror(float3(0.9f, 0.9f, 0.9f)));
