@@ -1,6 +1,6 @@
 #include "BVHTree.h"
 
-bool BVHTree::Intersect(const Ray& ray, float t_min, float t_max) const
+bool BVHTree::Intersect(const Ray& ray, float& t_min) const
 {
 	float3 b = a + x + y + z;
 
@@ -27,36 +27,40 @@ void BVHTree::buildTree(const std::vector<std::shared_ptr<GeoObject>>& geo)
 			inscribedObjectsCount++;
 		}
 	}
-	if (inscribedObjectsCount == boundedObjects.size() || boundedObjects.size() == 0 || depth > 5) {
+	bool condition = false;
+	if (depth != 0) {
+		condition = (rootElement->boundedObjects == boundedObjects);
+	};
+	if (inscribedObjectsCount == boundedObjects.size() || boundedObjects.size() == 0 || condition) {
 		return;
 	}
 	float xBorder = (a.x + x.x) / 2;
 	std::vector<int> leftObjects, rightObjects;
 	for (auto i : boundedObjects) {
-		if (geo.at(i)->getCenter().x > xBorder) {
+		if (geo.at(i)->getCenter().x >= xBorder) {
 			rightObjects.push_back(i);
 		}
 		else {
 			leftObjects.push_back(i);
 		}
 	}
-	float lmaxX = a.x;
-	float lmaxY = a.y;
-	float lmaxZ = a.z;
+	float lmaxX = geo.at(0)->getMaxX();
+	float lmaxY = geo.at(0)->getMaxY();
+	float lmaxZ = geo.at(0)->getMaxZ();
 	for (auto i : leftObjects) {
 		if (lmaxX < geo.at(i)->getMaxX()) {
 			lmaxX = geo.at(i)->getMaxX();
 		}
-		if (lmaxY <= geo.at(i)->getMinY()) {
-			lmaxY = geo.at(i)->getMinY();
+		if (lmaxY <= geo.at(i)->getMaxY()) {
+			lmaxY = geo.at(i)->getMaxY();
 		}
-		if (lmaxZ <= geo.at(i)->getMinZ()) {
-			lmaxZ = geo.at(i)->getMinZ();
+		if (lmaxZ <= geo.at(i)->getMaxZ()) {
+			lmaxZ = geo.at(i)->getMaxZ();
 		}
 	}
-	float rminX = a.x + x.x;
-	float rminY = a.y + y.y;
-	float rminZ = a.z + z.z;
+	float rminX = geo.at(0)->getMinX();
+	float rminY = geo.at(0)->getMinY();
+	float rminZ = geo.at(0)->getMinZ();
 	for (auto i : rightObjects) {
 		if (rminX > geo.at(i)->getMinX()) {
 			rminX = geo.at(i)->getMinX();
@@ -70,16 +74,19 @@ void BVHTree::buildTree(const std::vector<std::shared_ptr<GeoObject>>& geo)
 	}
 
 	float3 b = a + x + y + z;
+	BVHTree* tempRootElement = this;
 
 	BVHTree* tempLeftVolume = new BVHTree(a,float3(lmaxX, x.y, x.z), float3(y.x, lmaxY, y.z), float3(z.x, z.y, lmaxZ));
 	tempLeftVolume->boundedObjects = leftObjects;
 	tempLeftVolume->depth = depth + 1;
+	tempLeftVolume->rootElement = tempRootElement;
 	tempLeftVolume->buildTree(geo);
 	leftVolume = tempLeftVolume;
 	float3 rA = float3(rminX, rminY, rminZ);
 	BVHTree* tempRightVolume  = new BVHTree(rA, float3(b.x, x.y, x.z), float3(y.x, b.y, y.z), float3(z.x, z.y, b.z));
 	tempRightVolume->boundedObjects = rightObjects;
 	tempRightVolume->depth = depth + 1;
+	tempRightVolume->rootElement = tempRootElement;
 	tempRightVolume->buildTree(geo);
 	rightVolume = tempRightVolume;
 
@@ -87,24 +94,29 @@ void BVHTree::buildTree(const std::vector<std::shared_ptr<GeoObject>>& geo)
 }
 
  void BVHTree::getBoundedObjects(Ray& ray, std::vector<int>&boundVector)
-{
-	float tnear = std::numeric_limits<float>::max();
-	bool kek =  rightVolume == NULL;
+ {
+	 float ltMin, rtMin;
 	if (rightVolume == NULL && leftVolume == NULL ) {
 		boundVector = boundedObjects;
 		return;
 	}
-	else {
-		if (leftVolume != NULL && leftVolume->boundedObjects.size() != 0 && leftVolume->Intersect(ray, 0.001, tnear)) {
+	if (leftVolume != NULL && leftVolume->Intersect(ray, ltMin) && rightVolume != NULL && rightVolume->Intersect(ray, rtMin)) {
+		if (ltMin < rtMin) {
 			leftVolume->getBoundedObjects(ray, boundVector);
-			return;
-		}
-		else if (rightVolume != NULL && rightVolume->boundedObjects.size() != 0 && rightVolume->Intersect(ray, 0.001, tnear)) {
 			rightVolume->getBoundedObjects(ray, boundVector);
-			return;
 		}
 		else {
-			return;
+			rightVolume->getBoundedObjects(ray, boundVector);
+			leftVolume->getBoundedObjects(ray, boundVector);
 		}
+	}
+	else if (leftVolume != NULL && leftVolume->Intersect(ray, ltMin)) {
+		leftVolume->getBoundedObjects(ray, boundVector);
+	}
+	else if (rightVolume != NULL && rightVolume->Intersect(ray, rtMin)) {
+		rightVolume->getBoundedObjects(ray, boundVector);
+	}
+	else {
+		return;
 	}
 }
