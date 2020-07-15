@@ -15,6 +15,44 @@ bool Plane::Intersect(const Ray &ray, float t_min, float t_max, SurfHit &surf) c
     return false;
 }
 
+float3 Plane::getCenter() const
+{
+	return point;
+}
+
+float Plane::getMinY() const
+{
+	return point.y;
+}
+
+float Plane::getMaxX() const
+{
+	return point.x;
+}
+
+float Plane::getMinX() const
+{
+	return point.x;
+}
+
+float Plane::getMaxY() const
+{
+	return point.y;
+}
+
+float Plane::getMaxZ() const
+{
+	return point.z;
+}
+
+float Plane::getMinZ() const
+{
+	return point.z;
+}
+
+
+
+
 /////////////////////////////////////////
 
 
@@ -54,6 +92,41 @@ bool Sphere::Intersect(const Ray &ray, float t_min, float t_max, SurfHit &surf) 
     return false;
 }
 
+float3 Sphere::getCenter() const
+{
+	return center;
+}
+
+float Sphere::getMinY() const
+{
+	return center.y - r;
+}
+
+float Sphere::getMaxX() const
+{
+	return center.x + r;
+}
+
+float Sphere::getMinX() const
+{
+	return center.x - r;
+}
+
+float Sphere::getMaxY() const
+{
+	return center.y + r;
+}
+
+float Sphere::getMaxZ() const
+{
+	return center.z + r;
+}
+
+float Sphere::getMinZ() const
+{
+	return center.z - r;
+}
+
 bool Triangle::Intersect(const Ray &ray, float t_min, float t_max, SurfHit &surf) const {
     float3 normal = cross(dotB - dotA, dotC - dotA);
     float3 T = ray.o - dotA;
@@ -74,6 +147,42 @@ bool Triangle::Intersect(const Ray &ray, float t_min, float t_max, SurfHit &surf
     }
 
     return false;
+}
+
+float3 Triangle::getCenter() const
+{
+	return dotA;
+}
+
+float Triangle::getMinY() const
+{
+
+	return min(dotA.y, min(dotB.y, dotC.y));
+}
+
+float Triangle::getMaxX() const
+{
+	return max(dotA.x, max(dotB.x, dotC.x));;
+}
+
+float Triangle::getMinX() const
+{
+	return min(dotA.x, min(dotB.x, dotC.x));
+}
+
+float Triangle::getMaxY() const
+{
+	return max(dotA.y, max(dotB.y, dotC.y));
+}
+
+float Triangle::getMaxZ() const
+{
+	return max(dotA.z, max(dotB.z, dotC.z));
+}
+
+float Triangle::getMinZ() const
+{
+	return min(dotA.z, min(dotB.z, dotC.z));
 }
 
 bool Box::Intersect(const Ray &ray, float t_min, float t_max, SurfHit &surf) const {
@@ -108,6 +217,41 @@ bool Box::Intersect(const Ray &ray, float t_min, float t_max, SurfHit &surf) con
     }
 
     return false;
+}
+
+float3 Box::getCenter() const
+{
+	return a;
+}
+
+float Box::getMinY() const
+{
+	return min(a.y, a.y + y.y);
+}
+
+float Box::getMaxX() const
+{
+	return max(a.x, a.x + x.x);
+}
+
+float Box::getMinX() const
+{
+	return min(a.x, a.x + x.x);
+}
+
+float Box::getMaxY() const
+{
+	return max(a.y, a.y + y.y);;
+}
+
+float Box::getMaxZ() const
+{
+	return z.z;
+}
+
+float Box::getMinZ() const
+{
+	return a.z;
 }
 
 bool Cylinder::Intersect(const Ray& ray, float t_min, float t_max, SurfHit &surf) const

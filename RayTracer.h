@@ -6,6 +6,7 @@
 using namespace HydraLiteMath;
 
 class GeoObject;
+class BVHTree;
 
 class Ray {
 public:
@@ -39,9 +40,8 @@ public:
 
     ~SimpleRT() = default;
 
-    float3 TraceRay(Ray &ray, const std::vector<std::shared_ptr<GeoObject>> &geo, float3 dot_light, int &depth);
+    float3 TraceRay(Ray &ray, const std::vector<std::shared_ptr<GeoObject>> &geo, float3 dot_light, int &depth, BVHTree volume);
 
-//    float3 WhittedRayTrace(const Ray &ray, const std::vector<std::shared_ptr<GeoObject>> &geo, const int &depth);
 
 private:
     int max_ray_depth; // максимальная глубина трассировки

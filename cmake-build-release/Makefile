@@ -124,6 +124,33 @@ rt_sample_new\fast:
 	$(MAKE) -f CMakeFiles\rt_sample_new.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\rt_sample_new.dir\build
 .PHONY : rt_sample_new\fast
 
+BVHTree.obj: BVHTree.cpp.obj
+
+.PHONY : BVHTree.obj
+
+# target to build an object file
+BVHTree.cpp.obj:
+	$(MAKE) -f CMakeFiles\rt_sample_new.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\rt_sample_new.dir\BVHTree.cpp.obj
+.PHONY : BVHTree.cpp.obj
+
+BVHTree.i: BVHTree.cpp.i
+
+.PHONY : BVHTree.i
+
+# target to preprocess a source file
+BVHTree.cpp.i:
+	$(MAKE) -f CMakeFiles\rt_sample_new.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\rt_sample_new.dir\BVHTree.cpp.i
+.PHONY : BVHTree.cpp.i
+
+BVHTree.s: BVHTree.cpp.s
+
+.PHONY : BVHTree.s
+
+# target to generate assembly for a file
+BVHTree.cpp.s:
+	$(MAKE) -f CMakeFiles\rt_sample_new.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\rt_sample_new.dir\BVHTree.cpp.s
+.PHONY : BVHTree.cpp.s
+
 Camera.obj: Camera.cpp.obj
 
 .PHONY : Camera.obj
@@ -268,6 +295,9 @@ help:
 	@echo ... rt_sample_new
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... BVHTree.obj
+	@echo ... BVHTree.i
+	@echo ... BVHTree.s
 	@echo ... Camera.obj
 	@echo ... Camera.i
 	@echo ... Camera.s

@@ -7,10 +7,19 @@
 
 using namespace HydraLiteMath;
 
+
 //Базовый виртуальный класс для геометрического объекта, с которым может пересекаться луч
 class GeoObject {
 public:
     virtual bool Intersect(const Ray &ray, float t_min, float t_max, SurfHit &surf) const = 0;
+
+	virtual float3 getCenter() const = 0;
+	virtual float getMinY() const = 0;
+	virtual float getMaxX() const = 0;
+	virtual float getMinX() const = 0;
+	virtual float getMaxY() const = 0;
+	virtual float getMaxZ() const = 0;
+	virtual float getMinZ() const = 0;
 
     std::shared_ptr<Material> m_ptr;
 
@@ -28,6 +37,13 @@ public:
     ~Plane() = default;
 
     bool Intersect(const Ray &ray, float t_min, float t_max, SurfHit &surf) const override;
+    float3 getCenter()  const override;
+	float getMinY()  const override;
+	float getMaxX()  const override;
+	float getMinX()  const override;
+	float getMaxY()  const override;
+	float getMaxZ()  const override;
+	float getMinZ()  const override;
 
 private:
     float3 point;
@@ -44,6 +60,13 @@ public:
     ~Sphere() = default;
 
     bool Intersect(const Ray &ray, float t_min, float t_max, SurfHit &surf) const override;
+	float3 getCenter()  const override;
+	float getMinY()  const override;
+	float getMaxX()  const override;
+	float getMinX()  const override;
+	float getMaxY()  const override;
+	float getMaxZ()  const override;
+	float getMinZ()  const override;
 
 private:
     float3 center;
@@ -60,6 +83,13 @@ public:
     ~Triangle() = default;
 
     bool Intersect(const Ray &ray, float t_min, float t_max, SurfHit &surf) const override;
+	float3 getCenter()  const override;
+	float getMinY()  const override;
+	float getMaxX()  const override;
+	float getMinX()  const override;
+	float getMaxY()  const override;
+	float getMaxZ()  const override;
+	float getMinZ()  const override;
 
 private:
     float3 dotA;
@@ -75,6 +105,13 @@ public:
     ~Box() = default;
 
     bool Intersect(const Ray &ray, float t_min, float t_max, SurfHit &surf) const override;
+	float3 getCenter()  const override;
+	float getMinY()  const override;
+	float getMaxX()  const override;
+	float getMinX()  const override;
+	float getMaxY()  const override;
+	float getMaxZ()  const override;
+	float getMinZ()  const override;
 
 private:
     float3 a;

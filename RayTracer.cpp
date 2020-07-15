@@ -2,18 +2,21 @@
 #include "RayTracer.h"
 #include "Material.h"
 #include "Geometry.h"
+#include "BVHTree.h"
 
 
 //Базовый алгоритм трассировки луча
-float3 SimpleRT::TraceRay(Ray &ray, const std::vector <std::shared_ptr<GeoObject>> &geo, float3 dot_light, int &depth) {
+float3 SimpleRT::TraceRay(Ray &ray, const std::vector <std::shared_ptr<GeoObject>> &geo, float3 dot_light, int &depth, BVHTree volume) {
 	auto pixel_color = float3(0.0f, 0.0f, 0.0f);
 	while (depth < max_ray_depth) {
 		float tnear = std::numeric_limits<float>::max();
 		int geoIndex = -1;
 
 		SurfHit surf;
+		std::vector<int>intersectedObjectIndexes; 
+		volume.getBoundedObjects(ray, intersectedObjectIndexes);
 		//среди геометрии сцены ищем объекты, с которыми пересекается текущий луч и находим ближайшее пересечение
-		for (int i = 0; i < geo.size(); ++i) {
+		for (auto i : intersectedObjectIndexes) {
 			SurfHit temp;
 
 			if (geo.at(i)->Intersect(ray, 0.001, tnear, temp)) {
@@ -24,6 +27,7 @@ float3 SimpleRT::TraceRay(Ray &ray, const std::vector <std::shared_ptr<GeoObject
 				}
 			}
 		}
+
 
 		//если луч не пересек ни один объект, то значит он улетел в фон
 		//вычисляем цвет как градиент цвета фона
@@ -37,7 +41,7 @@ float3 SimpleRT::TraceRay(Ray &ray, const std::vector <std::shared_ptr<GeoObject
 		Ray shadow_ray(surf.hitPoint, normalize(dot_light - surf.hitPoint));
 
 		int shadowGeoIndex = -1;
-		for (int i = 0; i < geo.size(); ++i) {
+		for (auto i : intersectedObjectIndexes) {
 			SurfHit temp;
 			if (geo.at(i)->Intersect(shadow_ray, 0.01, tnear, temp)) {
 				shadowGeoIndex = i;
@@ -53,6 +57,7 @@ float3 SimpleRT::TraceRay(Ray &ray, const std::vector <std::shared_ptr<GeoObject
 		}
 		depth++;
 	}
+
 	return pixel_color;
 }
 

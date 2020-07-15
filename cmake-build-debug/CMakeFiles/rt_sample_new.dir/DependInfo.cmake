@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "D:/Users/Максим/rt_sample_new_/BVHTree.cpp" "D:/Users/Максим/rt_sample_new_/cmake-build-debug/CMakeFiles/rt_sample_new.dir/BVHTree.cpp.obj"
   "D:/Users/Максим/rt_sample_new_/Camera.cpp" "D:/Users/Максим/rt_sample_new_/cmake-build-debug/CMakeFiles/rt_sample_new.dir/Camera.cpp.obj"
   "D:/Users/Максим/rt_sample_new_/Geometry.cpp" "D:/Users/Максим/rt_sample_new_/cmake-build-debug/CMakeFiles/rt_sample_new.dir/Geometry.cpp.obj"
   "D:/Users/Максим/rt_sample_new_/Material.cpp" "D:/Users/Максим/rt_sample_new_/cmake-build-debug/CMakeFiles/rt_sample_new.dir/Material.cpp.obj"

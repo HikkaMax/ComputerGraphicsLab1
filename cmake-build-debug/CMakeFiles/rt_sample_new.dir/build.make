@@ -153,13 +153,33 @@ CMakeFiles\rt_sample_new.dir\main.cpp.s: cmake_force
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\rt_sample_new.dir\main.cpp.s /c D:\Users\Максим\rt_sample_new_\main.cpp
 <<
 
+CMakeFiles\rt_sample_new.dir\BVHTree.cpp.obj: CMakeFiles\rt_sample_new.dir\flags.make
+CMakeFiles\rt_sample_new.dir\BVHTree.cpp.obj: ..\BVHTree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Максим\rt_sample_new_\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/rt_sample_new.dir/BVHTree.cpp.obj"
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\rt_sample_new.dir\BVHTree.cpp.obj /FdCMakeFiles\rt_sample_new.dir\ /FS -c D:\Users\Максим\rt_sample_new_\BVHTree.cpp
+<<
+
+CMakeFiles\rt_sample_new.dir\BVHTree.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rt_sample_new.dir/BVHTree.cpp.i"
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\cl.exe > CMakeFiles\rt_sample_new.dir\BVHTree.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Users\Максим\rt_sample_new_\BVHTree.cpp
+<<
+
+CMakeFiles\rt_sample_new.dir\BVHTree.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rt_sample_new.dir/BVHTree.cpp.s"
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\rt_sample_new.dir\BVHTree.cpp.s /c D:\Users\Максим\rt_sample_new_\BVHTree.cpp
+<<
+
 # Object files for target rt_sample_new
 rt_sample_new_OBJECTS = \
 "CMakeFiles\rt_sample_new.dir\Geometry.cpp.obj" \
 "CMakeFiles\rt_sample_new.dir\Camera.cpp.obj" \
 "CMakeFiles\rt_sample_new.dir\Material.cpp.obj" \
 "CMakeFiles\rt_sample_new.dir\RayTracer.cpp.obj" \
-"CMakeFiles\rt_sample_new.dir\main.cpp.obj"
+"CMakeFiles\rt_sample_new.dir\main.cpp.obj" \
+"CMakeFiles\rt_sample_new.dir\BVHTree.cpp.obj"
 
 # External object files for target rt_sample_new
 rt_sample_new_EXTERNAL_OBJECTS =
@@ -169,9 +189,10 @@ rt_sample_new.exe: CMakeFiles\rt_sample_new.dir\Camera.cpp.obj
 rt_sample_new.exe: CMakeFiles\rt_sample_new.dir\Material.cpp.obj
 rt_sample_new.exe: CMakeFiles\rt_sample_new.dir\RayTracer.cpp.obj
 rt_sample_new.exe: CMakeFiles\rt_sample_new.dir\main.cpp.obj
+rt_sample_new.exe: CMakeFiles\rt_sample_new.dir\BVHTree.cpp.obj
 rt_sample_new.exe: CMakeFiles\rt_sample_new.dir\build.make
 rt_sample_new.exe: CMakeFiles\rt_sample_new.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Users\Максим\rt_sample_new_\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable rt_sample_new.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Users\Максим\rt_sample_new_\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable rt_sample_new.exe"
 	"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\rt_sample_new.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\rt_sample_new.dir\objects1.rsp @<<
  /out:rt_sample_new.exe /implib:rt_sample_new.lib /pdb:D:\Users\Максим\rt_sample_new_\cmake-build-debug\rt_sample_new.pdb /version:0.0  /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<

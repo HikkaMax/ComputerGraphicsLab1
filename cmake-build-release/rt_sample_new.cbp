@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/Users/Максим/rt_sample_new_/BVHTree.cpp">
+			<Option target="rt_sample_new"/>
+		</Unit>
+		<Unit filename="D:/Users/Максим/rt_sample_new_/BVHTree.h">
+			<Option target="rt_sample_new"/>
+		</Unit>
 		<Unit filename="D:/Users/Максим/rt_sample_new_/Camera.cpp">
 			<Option target="rt_sample_new"/>
 		</Unit>

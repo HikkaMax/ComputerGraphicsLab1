@@ -8,7 +8,8 @@ set(SRC Geometry.cpp
         Camera.cpp
         Material.cpp
         RayTracer.cpp
-        main.cpp)
+        main.cpp
+		BVHTree.cpp)
 
 add_executable(rt_sample_new ${SRC})
 #find_package(OpenMP)

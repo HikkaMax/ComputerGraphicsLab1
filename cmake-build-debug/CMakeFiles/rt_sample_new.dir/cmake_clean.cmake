@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/rt_sample_new.dir/BVHTree.cpp.obj"
   "CMakeFiles/rt_sample_new.dir/Camera.cpp.obj"
   "CMakeFiles/rt_sample_new.dir/Geometry.cpp.obj"
   "CMakeFiles/rt_sample_new.dir/Material.cpp.obj"
